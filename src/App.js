@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 
@@ -9,9 +9,9 @@ function App() {
     <div className="app">
       <Router>
         <>
-          <Routes>
+          <Switch>
             <Route path="/" exact element={<Home></Home>}></Route>
-          </Routes>
+          </Switch>
         </>
       </Router>
     </div>
