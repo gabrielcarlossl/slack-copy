@@ -5,6 +5,7 @@ body {
 
   --slack-color-dark: #1A1D21;
   --slack-color-default: #3f0f40;
+  --slack-color-border: #2B2E31;
   overflow: hidden;
 
   margin: 0;
