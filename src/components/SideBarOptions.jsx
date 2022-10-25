@@ -1,21 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import { db } from '../firebase'
-import { addDoc, collection} from 'firebase/firestore'
+
+
 
 function SideBarOptions({ Icon, title, addChannelOption }) {
 
-    const addChannel =  async () => {
+    const addChannel = () => {
         const channelName = prompt('Por favor diga o nome do canal:')
 
         if (channelName) {
-            await addDoc(collection(db, 'rooms'),{
+            db.collection('rooms').add({
                 name: channelName,
             })
         }
     }
 
-    const selectChannel = () => {}
+    const selectChannel = () => {
+        
+    }
 
     return (
         <SideBarOptionsContainer onClick={addChannelOption ? addChannel : selectChannel}>
@@ -58,7 +61,9 @@ cursor: pointer;
 }
 `
 
-const SideBarOptionChannel = styled.div`
+const SideBarOptionChannel = styled.h3`
 
+    padding: 10px 0;
+    font-weight: 300;
 
 `
