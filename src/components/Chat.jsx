@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import styled from 'styled-components'
-import { FiberManualRecord, InfoOutlined, StarBorderOutlined } from '@material-ui/icons'
+import {  InfoOutlined, StarBorderOutlined } from '@material-ui/icons'
 
 import { selectRoomId } from '../features/app'
 import { useSelector } from 'react-redux'
