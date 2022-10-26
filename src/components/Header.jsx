@@ -33,7 +33,7 @@ export default function Header() {
 
         <HeaderSearch>
             <SearchIcon></SearchIcon>
-            <input placeholder='Pesquisar 7ennoxChannel' />
+            <input placeholder='Pesquisar 7ennox Channel' />
         </HeaderSearch>
 
         {/* header right */}
