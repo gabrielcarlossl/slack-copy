@@ -1,7 +1,14 @@
 # Slack Copy project 
 ## Used Technologies: 
 ###
-Redux, styled components, Firebase, Material UI, firebase Hooks
+Redux, styled components, Firebase, Material UI, firebase Hooks, Google Auth
+
+## Features
+
+###
+- Create channels.
+- Send messages.
+- Firebase auth login.
 
 ## Getting Started with Create React App and Redux
 
