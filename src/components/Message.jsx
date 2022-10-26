@@ -26,8 +26,8 @@ const MessageContainer = styled.div`
     align-items: center;
     padding: 20px;
     > img {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
         border-radius: 8px;
 }
 
