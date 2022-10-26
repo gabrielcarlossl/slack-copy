@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { db } from '../firebase'
 import firebase from 'firebase'
 
-function ChatInput({channelName,  channelId}) {
+function ChatInput({channelName,  channelId, chatRef}) {
 
     const [input, setInput] = useState('')
     
@@ -22,6 +22,10 @@ function ChatInput({channelName,  channelId}) {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             user: 'gabriel',
             userImage: 'https://robohash.org/gk'
+        })
+
+        chatRef.current.scrollIntoView({
+            behavior: 'smooth'
         })
 
         setInput('')

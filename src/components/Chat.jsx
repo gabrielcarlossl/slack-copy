@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import styled from 'styled-components'
-import { InfoOutlined, StarBorderOutlined } from '@material-ui/icons'
+import { FiberManualRecord, InfoOutlined, StarBorderOutlined } from '@material-ui/icons'
 
 import { selectRoomId } from '../features/app'
 import { useSelector } from 'react-redux'
@@ -41,6 +41,10 @@ function Chat() {
 
     return (
         <ChatContainer>
+            
+            
+
+            {roomDetails && roomMessages && (
 
             <>
                 <Header>
@@ -76,8 +80,15 @@ function Chat() {
 
                 </ChatMesseges>
 
-                <ChatInput channelName={roomDetails?.data().name} channelId={roomId} ></ChatInput>
+                <ChatInput 
+                    chatRef={chatRef} 
+                    channelName={roomDetails?.data().name} 
+                    channelId={roomId} 
+                    
+                ></ChatInput>
             </>
+            )}
+
 
         </ChatContainer>
     )
@@ -90,11 +101,14 @@ const ChatContainer = styled.div`
     flex-grow: 1;
     overflow-y: scroll;
     margin-top: 70px;
+
 `
 
 const ChatMesseges = styled.div``
 
-const ChatBottom = styled.div``
+const ChatBottom = styled.div`
+    padding-bottom: 150px;
+`
 
 
 const Header = styled.div`
