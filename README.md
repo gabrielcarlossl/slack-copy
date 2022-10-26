@@ -1,7 +1,7 @@
 # Slack Copy project 
 ## Used Technologies: 
 ###
-Redux, styled components, Firebase, Material UI, firebase Hooks
+Redux, styled components, Firebase, Material UI, firebase Hooks, Google Auth
 
 ## Features
 
