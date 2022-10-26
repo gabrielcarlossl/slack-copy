@@ -10,6 +10,7 @@ import styled from "styled-components";
 
 import Home from "./components/Home";
 import SideBar from "./components/SideBar";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <AppBody>
             <SideBar></SideBar>
             <Switch>
-              <Route path="/" exact></Route>
+              
+              <Chat></Chat>
             </Switch>
           </AppBody>
         </>

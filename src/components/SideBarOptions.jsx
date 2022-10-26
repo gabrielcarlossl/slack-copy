@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useDispatch } from 'react-redux'
-import { enterRoom } from '../features/appSlice'
+import { enterRoom } from '../features/app'
 
 import styled from 'styled-components'
 
